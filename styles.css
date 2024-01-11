@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#steps-container {
+    margin-bottom: 20px;
+}
+
+.step-container {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* New styles for improved table visibility */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Styles for the input table without borders */
+.input-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-table th, .input-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.input-table th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.input-table input {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.input-table input[type="number"] {
+    width: 30%;
+}
+
+/* Import button and file input styles */
+#importSection {
+    margin-bottom: 10px;
+}
+
+#importSection input[type="file"] {
+    display: none;
+    margin-right: 10px;
+}
+
+#importSection button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+#importSection button:hover {
+    background-color: #0b7dda;
+}
