@@ -25,20 +25,19 @@
             </tr>
         </table>
 
-        <!-- Add the existing buttons -->
-        <button type="button" onclick="addStep()">Adicionar Etapa</button>
-        <button type="button" onclick="generateScenarios()">Gerar Cenários</button>
-        <button type="button" onclick="exportCSV()">Exportar para CSV</button>
+        <div id="buttonContainer">
+            <button type="button" onclick="addStep()">Adicionar Etapa</button>
+            <button type="button" onclick="generateScenarios()">Gerar Cenários</button>
+            <button type="button" onclick="exportCSV()">Exportar para CSV</button>
 
-        <!-- Add a div to contain the file input and import button -->
-        <div id="importSection">
-            <div id="loadingContainer">
-                <div id="loadingText"></div>
+            <div id="importSection">
+                <div id="loadingContainer">
+                    <div id="loadingText"></div>
+                </div>
+                <input type="file" id="csvFileInput" accept=".csv">
+                <button type="button" onclick="importCSV()">Importar CSV</button>
             </div>
-            <input type="file" id="csvFileInput" accept=".csv">
-            <button type="button" onclick="importCSV()">Importar CSV</button>
         </div>
-
         <div id="chart-container"></div>
     </div>
 
