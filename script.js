@@ -163,8 +163,8 @@ function importCSV() {
             // Clear the file input to allow importing the same file again
             fileInput.value = '';
 
-            // Attach the event listener again
-            fileInput.addEventListener('change', importCSV);
+            // Remove the event listener to avoid multiple attachments
+            fileInput.removeEventListener('change', importCSV);
         };
 
         reader.onprogress = function (e) {
@@ -180,6 +180,11 @@ function importCSV() {
         fileInput.click();
     }
 }
+
+// Attach the event listener initially
+const fileInput = document.getElementById('csvFileInput');
+fileInput.addEventListener('change', importCSV);
+
 
 
 function parseCSV(csvContent) {
