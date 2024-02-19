@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
+    padding-top: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -24,12 +25,12 @@ body {
 
 #buttonContainer {
     display: flex;
-    justify-content: space-around; /* Adjust as needed: space-between, center, etc. */
+    justify-content: space-around; 
     align-items: center;
 }
 
 #buttonContainer button {
-    flex: 1; /* Distribute available space equally among buttons */
+    flex: 1; 
     padding: 10px;
     margin: 5px;
     cursor: pointer;
@@ -57,7 +58,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* New styles for improved table visibility */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -79,7 +79,6 @@ th {
     color: #fff;
 }
 
-/* Styles for the input table without borders */
 .input-table {
     width: 100%;
     margin-bottom: 20px;
@@ -109,7 +108,7 @@ th {
 
 #importSection {
     display: flex;
-    flex: 1; /* Take up available space equally */
+    flex: 1; 
     align-items: center;
 }
 
@@ -119,7 +118,7 @@ th {
 }
 
 #importSection button {
-    flex: 1; /* Make the button take up 100% width of #importSection */
+    flex: 1; 
     padding: 10px;
     margin: 5px;
     cursor: pointer;
@@ -131,4 +130,24 @@ th {
 
 #importSection button:hover {
     background-color: #0b7dda;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-logo {
+    width: 30px;
+    height: 30px;
+    padding-inline: 10px;
+}
+
+.version {
+    padding-inline: 10px;
+}
+
+.title {
+    margin-top: 5px;
 }
